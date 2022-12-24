@@ -6,8 +6,10 @@ function InputField(props) {
                 <label className="form-label">{props.label}</label>
             }
             <input
+                onChange={props.onChange}                
                 type={props.type || "text"}
                 placeholder={props.placeholder}
+                step={props.step}
                 className="form-control"
             />
         </div>
